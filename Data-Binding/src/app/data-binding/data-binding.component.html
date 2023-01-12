@@ -73,7 +73,16 @@
   <section>
     <article>
       <h3>Input/Output Properties</h3>
-      <app-input-output-properties [nome]="nomeDoCurso"></app-input-output-properties>
+      <app-input-output-properties
+        [nome]="nomeDoCurso"
+      ></app-input-output-properties>
+    </article>
+  </section>
+  <br /><br />
+  <section>
+    <article>
+      <h3>Output Property</h3>
+      <app-contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></app-contador>
     </article>
   </section>
 </section>

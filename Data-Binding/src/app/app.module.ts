@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { InputOutputPropertiesComponent } from './input-output-properties/input-output-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { InputOutputPropertiesComponent } from './input-output-properties/input-
     EventBindingComponent,
     TwoWayDataBindingComponent,
     InputOutputPropertiesComponent,
+    OutputPropertyComponent,
+    CicloComponent,
   ],
   imports: [
     BrowserModule,
