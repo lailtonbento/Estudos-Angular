@@ -1,0 +1,10 @@
+Diretivas: são classes que adicionam comportamento adicional a algum elemento
+Exemplos de diretivas: ngFor, ngModel, ngIf
+
+Modulos: É uma classe que agrupa componentes, diretivas, pipes, services, declarar quais componentes podem ser usados por outros componentes
+que são de outros modulos
+
+Injeçao de Dependencia:
+
+Serviços:
+
