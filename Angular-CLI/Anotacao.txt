@@ -1,0 +1,25 @@
+ng new <nome-projeto> : Cria o projeto em Angular
+ng generate component <nome-componente> /nomePasta: Cria um Componente
+ng generate service <nome-service> : Cria um service
+ng generate directive <nome-diretiva> : Cria uma diretiva
+ng generate pipe <nome-pipe> : Cria um pipe
+ng generate class <nome-classe> : Cria uma classe
+ng generate interface <nome-interface> : Cria uma interface
+ng generate enum <nome-enum> : Cria um enum
+ng new <meu-projeto> --style=sass
+                     --style=less
+                     --style=stylus
+    em um projeto existente: ng set defaults.stylExt scss
+                                                     less
+                                                     styl
+ng lint : verificar se o codigo está de acordo com o style guide do js/angular
+ng test : carrega todos os testes e verifica se os testes estao passando
+ng e2e : testes de integracao end to end da aplicacao
+
+O Angular CLI seve para criar toda a estrutura do projeto, gerar a pagina HTML inicial, arquivos Typescript, arquivo CSS e arquivos de testes unitarios.
+Cria o arquivo package.json com todas as dependencias do Angular
+Instala todas as dependencias do node (npm install)
+Configura o Karma para executar os testes unitarios
+Cria todos os arquivos necessários para fazer o build da aplicacao para producao
+
+ng build : cria o build da nossa aplicacao
