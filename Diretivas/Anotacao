@@ -1,0 +1,9 @@
+Diretivas sao instrucoes passada pro template (html)
+Diretiva: um componente sem template, trata-se apenas da parte logica, serve para fazer manipulacao no DOM
+A diretiva pode ser compartilhada em toda a aplicacao
+Diretivas Estruturais: Interagem com a view e modificam a estrutura do DOM ou codigo HTML -> *ngFor
+                                                                                             *ngIf
+
+Diretivas de Atributos: Interagem com o elemento em que foram aplicadas -> ng-class
+                                                                           ng-style
+* 
