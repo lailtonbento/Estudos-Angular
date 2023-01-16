@@ -1,3 +1,4 @@
 Pipes: transformam valor e mostram esses valores dentro de um template
 Pipe Puro: Ele nao observa as modificacoes do value que é passado como parametro no transform();
 Pipe Impuro: Verifica as mudanças feitas no value e aplica o novo pipe
+Pipe Async: retorna o proprio valor do async que foi passado
