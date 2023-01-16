@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a routerLink="" class="navbar-brand active">Angular Routing</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li routerLinkActive="active" class="nav-item active">
+        <a routerLink="/login" class="nav-link">Login</a>
+      </li>
+      <li routerLinkActive="active" class="nav-item active">
+        <a routerLink="/cursos" class="nav-link">Cursos</a>
+      </li>
+      <li routerLinkActive="active" class="nav-item active">
+        <a [routerLink]="['/cursos', idCurso.value]" class="nav-link"
+          >Curso com ID</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<br />
+<div class="input-group mb-2">
+  <span class="input-group-text" id="basic-addon2">Entre com o ID</span>
+  <input #idCurso type="text" class="form-control" />
+</div>
