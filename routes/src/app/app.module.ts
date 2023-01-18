@@ -1,3 +1,4 @@
+import { AlunosModule } from './alunos/alunos.module';
 import { CursosModule } from './cursos/cursos.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,16 +11,15 @@ import { LoginComponent } from './login/login.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    LoginComponent,
-    NavbarComponent
+  declarations: [AppComponent, HomeComponent, LoginComponent, NavbarComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    CursosModule,
+    AlunosModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule,
-   CursosModule],
   providers: [],
   bootstrap: [AppComponent],
 })

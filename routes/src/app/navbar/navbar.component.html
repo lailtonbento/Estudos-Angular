@@ -9,15 +9,9 @@
         <a routerLink="/cursos" class="nav-link">Cursos</a>
       </li>
       <li routerLinkActive="active" class="nav-item active">
-        <a [routerLink]="['/cursos', idCurso.value]" class="nav-link"
-          >Curso com ID</a
-        >
+        <a [routerLink]="['/alunos']" class="nav-link">Alunos</a>
       </li>
     </ul>
   </div>
 </nav>
 <br />
-<div class="input-group mb-2">
-  <span class="input-group-text" id="basic-addon2">Entre com o ID</span>
-  <input #idCurso type="text" class="form-control" />
-</div>
