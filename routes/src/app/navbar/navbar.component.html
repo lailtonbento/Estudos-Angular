@@ -3,10 +3,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li routerLinkActive="active" class="nav-item active">
-        <a routerLink="/login" class="nav-link">Login</a>
-      </li>
-      <li routerLinkActive="active" class="nav-item active">
-        <a routerLink="/cursos" class="nav-link">Cursos</a>
+        <a [routerLink]="['/cursos']" class="nav-link">Cursos</a>
       </li>
       <li routerLinkActive="active" class="nav-item active">
         <a [routerLink]="['/alunos']" class="nav-link">Alunos</a>
@@ -14,4 +11,3 @@
     </ul>
   </div>
 </nav>
-<br />

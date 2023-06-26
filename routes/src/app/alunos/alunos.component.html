@@ -1,13 +1,14 @@
-<p>Lista de Alunos</p>
-<div class="list-group">
+<div class="container">
+  <h3>Lista de Alunos</h3>
+  <div class="list-group">
+    <a
+      class="list-group-item list-group-item-action active"
+      *ngFor="let aluno of alunos"
+      [routerLink]="[aluno.id]"
+    >
+      {{ aluno.nome }}
+    </a>
+  </div>
   <br />
-  <a
-    class="list-group-item list-group-item-action active"
-    *ngFor="let aluno of alunos"
-    [routerLink]="[aluno.id]"
-  >
-    {{ aluno.nome }}
-  </a>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

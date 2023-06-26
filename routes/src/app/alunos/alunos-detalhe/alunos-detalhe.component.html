@@ -1,5 +1,25 @@
 <h5>Detalhe do Aluno</h5>
-
-<p>Id: {{ aluno.id }}</p>
-<p>Nome: {{ aluno.nome }}</p>
-<p>Email: {{ aluno.email }}</p>
+<input
+  class="form-control"
+  type="text"
+  value="Id: {{ aluno.id }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>
+<input
+  class="form-control"
+  type="text"
+  value="Nome: {{ aluno.nome }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>
+<input
+  class="form-control"
+  type="text"
+  value="E-mail: {{ aluno.email }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>

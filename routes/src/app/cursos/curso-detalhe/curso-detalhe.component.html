@@ -1,1 +1,26 @@
-<p>Id: {{ id }}</p>
+<br />
+<h5>Detalhe do Curso</h5>
+<input
+  class="form-control"
+  type="text"
+  value="id: {{ curso.id }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>
+<input
+  class="form-control"
+  type="text"
+  value="Curso: {{ curso.nome }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>
+<input
+  class="form-control"
+  type="text"
+  value="Professor(a): {{ curso.professor }}"
+  aria-label="Disabled input example"
+  disabled
+  readonly
+/>

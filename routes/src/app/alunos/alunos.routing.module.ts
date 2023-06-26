@@ -1,4 +1,3 @@
-import { AlunoFormComponent } from './aluno-form/aluno-form.component';
 import { AlunosDetalheComponent } from './alunos-detalhe/alunos-detalhe.component';
 import { AlunosComponent } from './alunos.component';
 import { NgModule } from '@angular/core';
@@ -8,11 +7,7 @@ const alunosRoutes: Routes = [
   {
     path: 'alunos',
     component: AlunosComponent,
-    children: [
-      { path: 'novo', component: AlunoFormComponent },
-      { path: ':id', component: AlunosDetalheComponent },
-      { path: ':id/editar', component: AlunoFormComponent },
-    ],
+    children: [{ path: ':id', component: AlunosDetalheComponent }],
   },
 ];
 

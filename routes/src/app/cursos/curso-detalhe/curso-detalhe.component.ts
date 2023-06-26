@@ -9,21 +9,20 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./curso-detalhe.component.css'],
 })
 export class CursoDetalheComponent implements OnInit {
-  id!: number;
-  inscricao!: Subscription;
   curso: any;
+  inscricao!: Subscription;
+
   constructor(
     private route: ActivatedRoute,
     private cursosService: CursosService
-  ) {
-    //this.id = route.snapshot.params['id'];
-    //console.log(route)
-  }
+  ) {}
   ngOnInit() {
     this.inscricao = this.route.params.subscribe((params: any) => {
-      this.id = params['id'];
+      let id = params['id'];
+      this.curso = this.cursosService.getCursoId(id);
     });
   }
+
   ngOnDestroy() {
     this.inscricao.unsubscribe();
   }
